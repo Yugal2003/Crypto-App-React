@@ -30,6 +30,11 @@
   <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/82187dea-ef30-4a75-8094-b9f0ce72b050" /><br>
 </ul>
 
+<ul>
+  <li><h2>FireBase User Data</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/1a971d67-ea64-43e0-b353-9d05c5691284" /><br>
+</ul>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
