@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import toast, { Toaster } from 'react-hot-toast';
+import { BrowserRouter, Route , Routes} from 'react-router-dom';
+import MainPage from './components/MainPage';
+import Coins from './components/Coins';
+import CoinsDetails from './components/CoinsDetails';
+import SignUp from './components/SignUp'
+import SignIn from './components/SignIn';
 
 function App() {
+  // console.log(toast);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+          <BrowserRouter>
+            <Routes>
+              <Route path='/' element={<MainPage/>} />
+              <Route path='/coins' element={<Coins/>} />
+              <Route path='/coins/:id' element={<CoinsDetails/>} />
+              <Route path='/signup' element={<SignUp/>} />
+              <Route path='/signin' element={<SignIn/>} />
+            </Routes>
+            <Toaster/>
+          </BrowserRouter>
+      </div>
   );
 }
 

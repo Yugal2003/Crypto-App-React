@@ -1,0 +1,111 @@
+.two_part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.firstPart{
+    padding: 1rem;
+    text-align: center;
+}
+body{
+    background-color: black;
+}
+.two_part .firstPart div{
+    color: white;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+.two_btns_singlecoins{
+    margin: 1rem 4rem;
+}
+.btninr{
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.5rem 1.5rem;
+    background-color: orange;
+}
+.btninr:hover{
+    background-color: rgb(246, 163, 10);
+    transform: scale(1.02);
+}
+.btnusd{
+    margin-left: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0.5rem 1.5rem;
+    background-color: orange;
+}
+.btnusd:hover{
+    background-color: rgb(246, 163, 10);
+    transform: scale(1.02);
+}
+.last_update{
+    font-size: 20px;
+}
+.coins_name{
+    padding-top: 1rem;
+    font-size: 25px;
+}
+.coins_price{
+    padding-top: 0.5rem;
+    font-size: 22px;
+}
+.coins_per{
+    padding-top: 0.5rem;
+    font-size: 22px;
+}
+.coins_curr_rank{
+    padding-top: 1rem;
+    font-size: 22px;
+}
+.text_description{
+    width: 27rem;
+    text-align: left;
+    padding: 1rem;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .two_part {
+      flex-direction: column;
+      align-items: center;
+    }
+    .secondPart {
+      margin-top: 2rem; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .two_btns_singlecoins {
+      margin: 1rem; 
+    }
+    .text_description {
+      width: auto; 
+      max-width: 80%; 
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .coins_name {
+      font-size: 20px; 
+    }
+    .coins_price,
+    .coins_per,
+    .coins_curr_rank,
+    .text_description {
+      font-size: 16px; 
+    }
+  }
+  

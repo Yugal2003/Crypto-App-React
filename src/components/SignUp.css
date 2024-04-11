@@ -1,0 +1,120 @@
+.signup {
+    width: 100vw;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .email_password {
+    border-radius: 10px;
+    box-shadow: 1px 3px 20px 4px rgb(149, 133, 233);
+    text-align: center;
+    background-color: #8887C5;
+    width: 80%;
+  }
+  
+  .first_last_name {
+    margin-top: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .first_last_name input {
+    font-weight: bold;
+    width: 45%;
+    margin-inline: 0.3rem;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+  }
+  
+  .email_pass_section {
+    margin-top: 0.4rem;
+    margin-inline: 1.1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .email_pass_section input {
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 0.7rem;
+    margin-block: 0.3rem;
+  }
+  
+  .signupbtn {
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .signupbtn:hover {
+    transform: scale(1.03);
+    background-color: rgb(219, 221, 223);
+  }
+  
+  .h4tag {
+    margin-block: 1rem;
+  }
+  
+  @media only screen and (max-width: 320px) {
+    .first_last_name input {
+      width: 100%;
+    }
+    .email_pass_section input {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    .first_last_name input {
+      width: 45%;
+    }
+    .email_pass_section input {
+      width: 100%;
+    }
+  }
+  
+  @media only screen and (min-width: 480px) and (max-width: 768px) {
+    .first_last_name input {
+      width: 45%;
+    }
+    .email_pass_section input {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .first_last_name input {
+      width: 45%;
+    }
+    .email_pass_section input {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (min-width: 1025px){
+    .first_last_name {
+        flex-direction: column;
+    }
+    .last{
+        margin-top: 1rem;
+    }
+    .first_last_name input {
+        margin-left: 1rem;
+      width: 39%;
+    }
+    .email_pass_section input {
+      width: 40%;
+      margin-left: 23rem;
+    }
+  }

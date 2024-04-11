@@ -1,0 +1,221 @@
+
+.serchbar_and_btns{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-block: 2rem;
+}
+.two_btns{
+    display: flex;
+    flex-direction: row;
+}
+.two_btns button{
+    cursor: pointer;
+    padding: 5px 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: orange;
+}
+.sec_btn{
+    margin-left: 2rem;
+}
+.two_btns button:hover{
+    transform: scale(1.03);
+    background-color: rgb(224, 145, 0);
+}
+.span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search_input input{
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: none;
+    padding-top: 0.2rem;
+}
+.search_input{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+.single_coins_details{
+    display: flex;
+    background-color: black;
+    flex-direction: row;
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 1.5rem; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+}
+
+.single_coins_details div{
+    width: 6rem;
+}
+.table_tr_tag{
+    color: black;
+    width: 100vw;
+    background-color: orange;
+    display: flex;
+    padding: 1rem 5rem;
+    justify-content: space-around;
+}
+.table_tr_tag tr{
+    font-weight: bold;
+    font-family:monospace;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For screens smaller than 320px (e.g., very small mobile devices) */
+@media only screen and (max-width: 319px) {
+    .serchbar_and_btns {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .table_tr_tag tr{
+        font-weight: bold;
+        font-family:monospace;
+        font-size: 30px;
+    }
+    .two_btns {
+        margin-bottom: 1rem;
+    }
+    .two_btns button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .search_input {
+        width: 80%;
+    }
+    .single_coins_details {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .single_coins_details div {
+        width: 100%;
+    }
+    .table_tr_tag {
+        padding: 0.5rem 1rem;
+        font-size: 24px;
+    }
+}
+
+/* For screens between 320px and 767px (e.g., mobile devices) */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .serchbar_and_btns {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .table_tr_tag tr{
+        font-size: 15px;
+    }
+    .two_btns {
+        margin-bottom: 1rem;
+    }
+    .two_btns button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .search_input {
+        width: 80%;
+    }
+    .single_coins_details {
+        flex-direction: row;
+        align-items: center;
+        font-size: 15px;
+        margin-top: 1rem;
+    }
+    .single_coins_details div {
+        width: 100%;
+    }
+    .table_tr_tag {
+        padding: 0.5rem 1rem;
+        font-size: 24px;
+    }
+}
+
+/* For screens between 768px and 1024px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .serchbar_and_btns {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .two_btns {
+        margin-bottom: 0;
+    }
+    .two_btns button {
+        padding: 5px 15px;
+        font-size: 16px;
+    }
+    .search_input {
+        width: 50%;
+    }
+    .single_coins_details {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .single_coins_details div {
+        width: 15rem;
+    }
+    .table_tr_tag {
+        padding: 1rem 2rem;
+        font-size: 28px;
+    }
+}
+
+/* For screens larger than 1024px (default styles) */
+@media only screen and (min-width: 1025px) {
+    .serchbar_and_btns {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .two_btns {
+        margin-bottom: 0;
+    }
+    .two_btns button {
+        padding: 5px 20px;
+        font-size: 18px;
+    }
+    .search_input {
+        width: 50%;
+    }
+    .single_coins_details {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .single_coins_details div {
+        width: 20rem;
+    }
+    .table_tr_tag {
+        padding: 1rem 5rem;
+        font-size: 30px;
+    }
+}

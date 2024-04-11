@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+
+.navbar{
+    background-color: rgb(43, 42, 40);
+    display: flex;
+    color: white;
+    flex-direction: row;
+    height: 80px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-family: "Tektur", sans-serif;
+    font-size: 32px;
+}
+.logo:hover{
+    transform: scale(1.01);
+}
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+.navbar ul li:hover{
+    transform: scale(1.03);
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 50;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+.sec_li{
+    margin-left: 5rem;
+}
+.navbar button{
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: pink;
+}
+.navbar button:hover{
+    background-color: rgb(251, 173, 186);
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
