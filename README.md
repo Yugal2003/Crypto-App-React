@@ -1,3 +1,40 @@
+<h1>Crypto App Overview :</h1>
+
+<ul>
+  <li><h2>Home Page</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/3d752c21-699d-454b-afa7-8c99c3dbd42b" /><br>
+</ul>
+
+<ul>
+  <li><h2>Pagination Content</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/ce95ff00-9c4b-4d87-a569-bfdd68f85f59" /><br>
+</ul>
+
+<ul>
+  <li><h2>Login Page</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/5141a6d0-4dac-41a7-9bc2-26ba48035598" /><br>
+</ul>
+
+<ul>
+  <li><h2>SignUp Page</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/00d64373-1fdf-44d9-8c89-72c3fbad2802" /><br>
+</ul>
+
+<ul>
+  <li><h2>Coin Page</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/8238cb66-e891-4518-b201-bd6c514ba634" /><br>
+</ul>
+
+<ul>
+  <li><h2>CoinDetails Page</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/82187dea-ef30-4a75-8094-b9f0ce72b050" /><br>
+</ul>
+
+<ul>
+  <li><h2>FireBase User Data</h2></li>
+  <img src="https://github.com/Yugal2003/Crypto-App-React/assets/132428388/1a971d67-ea64-43e0-b353-9d05c5691284" /><br>
+</ul>
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
