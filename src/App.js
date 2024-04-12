@@ -1,6 +1,9 @@
 import './App.css';
+
 import toast, { Toaster } from 'react-hot-toast';
 import { BrowserRouter, Route , Routes} from 'react-router-dom';
+
+// pages to connect
 import MainPage from './components/MainPage';
 import Coins from './components/Coins';
 import CoinsDetails from './components/CoinsDetails';
@@ -8,7 +11,6 @@ import SignUp from './components/SignUp'
 import SignIn from './components/SignIn';
 
 function App() {
-  // console.log(toast);
   return (
       <div className="App">
           <BrowserRouter>

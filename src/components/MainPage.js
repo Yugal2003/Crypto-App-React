@@ -9,14 +9,16 @@ const MainPage = () => {
   const [exchanges, setExchanges] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const coinsPerPage = 10;
-  const totalPages = Math.ceil(exchanges.length / coinsPerPage);
+  const totalPages = Math.ceil(exchanges.length / coinsPerPage); // 100 / 10 = 10
 
   const fetchExchangeData = async () => {
     try {
       let result = await axios.get("https://api.coingecko.com/api/v3/exchanges");
       setExchanges(result.data);
+      console.log(result.data);
       setLoading(false);
-    } catch (error) {
+    } 
+    catch (error) {
       console.log(error);
       setLoading(false);
     }
@@ -26,10 +28,10 @@ const MainPage = () => {
     fetchExchangeData();
   }, []);
 
-  // Logic for pagination
-  const indexOfLastCoin = currentPage * coinsPerPage;
-  const indexOfFirstCoin = indexOfLastCoin - coinsPerPage;
-  const currentCoins = exchanges.slice(indexOfFirstCoin, indexOfLastCoin);
+  // Logic for pagination start
+  const indexOfLastCoin = currentPage * coinsPerPage; // 10
+  const indexOfFirstCoin = indexOfLastCoin - coinsPerPage; // 0
+  const currentCoins = exchanges.slice(indexOfFirstCoin, indexOfLastCoin); // 0 to 9
 
   const handlePageClick = (page) => {
     setCurrentPage(page);
@@ -47,6 +49,7 @@ const MainPage = () => {
       </button>
     );
   }
+  // Logic for pagination end
 
   return (
     <div className="main">
@@ -83,7 +86,8 @@ const MainPage = () => {
             <button onClick={() => setCurrentPage(currentPage - 1)}
               disabled={currentPage === 1}>Previous</button>
             {pageButtons}
-            <button onClick={() => setCurrentPage(currentPage + 1)} disabled={currentCoins.length < coinsPerPage}>Next</button>
+            <button onClick={() => setCurrentPage(currentPage + 1)} 
+              disabled={currentCoins.length < coinsPerPage}>Next</button>
           </div>
           
         </>

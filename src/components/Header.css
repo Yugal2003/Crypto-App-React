@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
 
 .navbar{
+    color: white;
     background-color: rgb(43, 42, 40);
     display: flex;
-    color: white;
     flex-direction: row;
     height: 80px;
     text-align: center;

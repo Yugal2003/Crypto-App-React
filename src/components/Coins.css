@@ -179,6 +179,7 @@
         flex-direction: row;
         align-items: center;
         margin-top: 1rem;
+        margin-left: 6rem;
     }
     .single_coins_details div {
         width: 15rem;
@@ -207,6 +208,7 @@
         width: 50%;
     }
     .single_coins_details {
+        margin-left: 12rem;
         flex-direction: row;
         align-items: center;
         margin-top: 2rem;

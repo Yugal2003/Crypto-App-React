@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 const Coins = () =>{
     const [loading,setLoading] = useState(true)
     const [coins ,setCoins] = useState([]);
+    
     const [currency ,setCurrency] = useState('inr');
     const currencySymbol = currency === 'inr' ? '₹': '$';
     const [search, setSearch]=useState('')

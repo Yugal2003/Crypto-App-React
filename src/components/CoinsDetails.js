@@ -10,6 +10,7 @@ const CoinsDetails = () =>{
 
     const[singleCoin,setSingleCoin] = useState([]);
     const[loading,setLoading] = useState(true);
+
     const[currency,setCurrency] = useState('inr');
     const currencySymbol = currency === 'inr' ? '₹': '$'
     const profit = singleCoin.market_data?.price_change_percentage_24h > 0   
@@ -77,6 +78,7 @@ const CoinsDetails = () =>{
                                 {singleCoin.description['en'].split('.')[0]}.
                             </div>
                         </div>
+                        
                         <div className="secondPart">
                         <CoinChart currency={currency} /> 
                         </div>
